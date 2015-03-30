@@ -1,6 +1,6 @@
 
 load('array.js');
-var tanks = JSON.parse(ARRAY);
+var student = JSON.parse(ARRAY);
 function filter(array, test) {
   var passed = [];
   for (var i = 0; i < array.length; i++) {
@@ -10,6 +10,6 @@ function filter(array, test) {
   return passed;
 }
 
-print(JSON.stringify(filter(Height, function(array) {
-  return array.height > 180 && array.Weight < 210;
+print(JSON.stringify(filter(student, function(student) {
+  return student.Height > 70 && student.Height < 75;
 })));
